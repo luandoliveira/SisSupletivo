@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,3 @@ Route::any('/search_aluno_result', [App\Http\Controllers\HomeController::class, 
 Route::get('/searchmae', [App\Http\Controllers\HomeController::class, 'searchamae'])->name('search_mae');
 Route::any('/search_mae_result', [App\Http\Controllers\HomeController::class, 'searchresulmae'])->name('search_mae_result');
 Route::get('/home1', [App\Http\Controllers\SupletivoController::class, 'index'])->name('home');
-
-
-
