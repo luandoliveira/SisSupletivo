@@ -1,6 +1,5 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<link rel="stylesheet" href="plugins\sweetalert2\sweetalert2.min.css">
+<script src="plugins\sweetalert2\sweetalert2.all.min.js"></script>
 @extends('adminlte::page')
 
 @section('title', 'SupletivoConsulta') 
@@ -67,12 +66,11 @@ nomeSobrenome = /\b[A-Za-zÀ-ú][A-Za-zÀ-ú]+,?\s[A-Za-zÀ-ú][A-Za-zÀ-ú]{2,1
 // Faz a validacao do regex no campo indicado
 if(!(nomeSobrenome.test(campo))){
        
-       swal({
+       swal.fire({
        title: "Mensagem",
        text: "Você precisa inserir ao menos um Nome e Sobrenome",
-       showCancelButton: true,
        confirmButtonClass: "btn-danger",
-       confirmButtonText: "OK",
+       button: "OK",
        
  })
  

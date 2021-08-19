@@ -63,7 +63,7 @@
 	
 		<div class="footer">
     <div class="position-relative">
-	<div style="background-color:black;font-size:0.8rem;">Copyright 2021 © Secretaria de Estado de Educação do Amazonas - Todos os direitos reservados.</div>
+	<div style="background-color:#001956;font-size:0.8rem;">Copyright 2021 © Secretaria de Estado de Educação do Amazonas - Todos os direitos reservados.</div>
       <img src="img\rodape.png" id="imagem">
 	 
     </div>
