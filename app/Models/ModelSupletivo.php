@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class ModelSupletivo extends Model
 {
-    protected $table="aluno";
+    protected $table="supletivo";
     protected $fillable = ['sup_num_aluno'];
 }
