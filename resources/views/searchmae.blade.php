@@ -242,17 +242,5 @@ event.preventDefault();
 );
  
  
-/* Example usage */
-$(document).ready( function () {
-    $('#tabela').dataTable( {
-        dom': 'T<"clear">lfrtip',
-        tableTools': {
-            "aButtons": [ {
-                "sExtends":    "copy_to_div",
-                "sButtonText": "Copy to div",
-                "target":      "#copy",
-            } ]
-        }
-    } );
-} );
+
 </script>

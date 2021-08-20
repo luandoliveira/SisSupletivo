@@ -16,7 +16,7 @@
 					@csrf
 					<div class="wrap-input100 validate-input m-b-26" data-validate="login é obrigatorio">
 						<span class="label-input100">Login</span>
-						<input id="email"  class="input100 @error('email') is-invalid @enderror" type="email" name="email"placeholder="Entre com seu email" value="{{ old('email') }}" autocomplete="email" autofocus>
+						<input id="email"  class=" @error('email') is-invalid @enderror input100" type="email" name="email" placeholder="Entre com seu email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 						<span class="focus-input100"></span>
 						@error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -27,7 +27,7 @@
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Senha obrigatoria">
 						<span class="label-input100">Senha</span>
-						<input id="password" class="input100 @error('password') is-invalid @enderror" type="password" name="password" placeholder="Entre com sua senha"  autocomplete="current-password">
+						<input id="password" class=" @error('password') is-invalid @enderror input100" type="password" name="password" placeholder="Entre com sua senha"  required autocomplete="current-password">
 						@error('password')
 							<span class="invalid-feedback" role="alert">
 								<strong>{{ $message }}</strong>
