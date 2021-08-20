@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,12 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::any('/search', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
-Route::get('/searchaluno', [App\Http\Controllers\HomeController::class, 'searchaluno'])->name('search_aluno');
-Route::any('/search_aluno_result', [App\Http\Controllers\HomeController::class, 'searchresulaluno'])->name('search_aluno_result');
-Route::get('/searchmae', [App\Http\Controllers\HomeController::class, 'searchamae'])->name('search_mae');
-Route::any('/search_mae_result', [App\Http\Controllers\HomeController::class, 'searchresulmae'])->name('search_mae_result');
-Route::get('/home1', [App\Http\Controllers\SupletivoController::class, 'index'])->name('home');
+/* Route::any('/search', [App\Http\Controllers\HomeController::class, 'search'])->name('search'); */
+Route::any('/searchaluno', [App\Http\Controllers\HomeController::class, 'searchaluno'])->name('search_aluno');
+/* Route::any('/search_aluno_result', [App\Http\Controllers\HomeController::class, 'searchresulaluno'])->name('search_aluno_result'); */
+Route::any('/searchmae', [App\Http\Controllers\HomeController::class, 'searchamae'])->name('search_mae');
+/* Route::any('/search_mae_result', [App\Http\Controllers\HomeController::class, 'searchresulmae'])->name('search_mae_result'); */
+/* Route::get('/home1', [App\Http\Controllers\SupletivoController::class, 'index'])->name('home'); */
 
-
-
+Route::get('/logout',[App\Http\Controllers\HomeController::class,'logout'])->name('logout');

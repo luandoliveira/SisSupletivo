@@ -24,16 +24,21 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+        
+        Gate::define('ver-form', function($user){ // identifica o adm no sistema
+
+            if($user->permission==1){
+              return true;
+
+            }else{
+
+                return false;
+            }
+
+            // outra forma de fazer todo o if else :  return $permission->===1 ? true : false;
+            // levar o gate para o controller produto e importar o gate 
+        });
 
         //
-    }
-
-    protected function getPermissions()
-    {
-        try {
-            return Permission::with('roles')->get();
-        } catch (\Exception $e) {
-            return [];
-        }
     }
 }

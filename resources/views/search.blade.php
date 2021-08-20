@@ -23,7 +23,7 @@
     </tr>
   </thead>
   <tbody>
-  @foreach ($search_name as $name)
+  @foreach ($search as $name)
     <tr>
       <td>{{$name->sup_num_aluno}}</td>
       <td>{{$name->sup_nome}}</td>
@@ -43,7 +43,7 @@
 <br>
 <br>
 <br>
-<p class="text-right"><i><br >Período de 1959 à 2010</br></i></p>
+<p class="text-right"><i><br >Base de dados de 1959 à 2010</br></i></p>
  <style>
    .loader {
     position: fixed;

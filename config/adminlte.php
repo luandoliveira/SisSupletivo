@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>SUPLETIVO</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Sistema</b>SUPLETIVO',
+    'logo_img' => 'img\ss.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -88,7 +88,7 @@ return [
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
-    'layout_fixed_footer' => null,
+    'layout_fixed_footer' => true,
     'layout_dark_mode' => null,
 
     /*
@@ -103,10 +103,10 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-darak',
+    'classes_auth_card' => 'card-outline card-dark',
     'classes_auth_header' => '', 
     'classes_auth_body' => '',
-    'classes_auth_footer' => '',
+    'classes_auth_footer' => 'card-outline card-dark',
     'classes_auth_icon' => '',
     'classes_auth_btn' => 'btn-flat btn-dark',
 
@@ -128,9 +128,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-secondary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-info elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-dark navbar-light',
+    'classes_topnav' => 'navbar-dark navbar-dark',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -260,6 +260,8 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ], */
+
+
         [
             'text'    => 'Consultar ',
             'icon'    => 'fa fa-search',
@@ -301,13 +303,15 @@ return [
               
             ],
         ],
-/*         ['header'=> ''],
-        [
-            'text'        => 'Sair',
-            'route' => 'logout',
-            'icon'        => 'fas fa-sign-out-alt',
-            'label_color' => 'success',
-          ], */
+
+   
+        //   ['header'=> ''],
+        // [
+        //     'text'        => 'Cadastrar',
+        //     'route'       =>  'logout',
+        //     'icon'        => 'fas fa-sign-out-alt',
+        //     'label_color' => 'success',
+        //   ],  
       /*   ['header' => 'labels'],
         [
             'text'       => 'important',

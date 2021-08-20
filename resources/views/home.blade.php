@@ -4,28 +4,37 @@
 
 
 @section('content_header')
-<br>
-<div class="container-fluid" id="teste">
-<h2 ckass="text-center">Bem Vindo ao Supletivo Consulta</h2>
-   
-</div>
-<!-- <br>
-<div>
-    <div  class="card-body">
-        <div class="col-md-5">
-            <form action="{{route('search_aluno_result')}}" method="post" class="form-horizontal">
-            @csrf
-            <div class="form-group">
-                <input name="search_aluno"type="search" class="form-control form-control-lg" placeholder="Nome do Aluno">         
-            </div>
-            <div class="form-group">
-                <input name="search_mae"type="search" class="form-control form-control-lg" placeholder="Nome da Mãe">
-                </div>
-        </div>
-        </div>
-    </div>
 
-</div>    -->   
+
+
+
+
+<br>
+@if($show)
+<div class="container-fluid" id="teste">
+<h3 ckass="text-center">Bem Vindo ao Sistema de Supletivo Web</h3>
+<!-- <div class="container-login100-form-btn" action="{{route('logout')}}">
+						<a href="{{route('logout')}}">
+						<button  style="background-color:#212529;" class="btn btn-dark"  type="submit">
+							Cadastrar Usuario
+						</button>
+						</a>
+					</div> -->
+
+</br>                
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cadastrar um Usuário</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <a href="{{route('logout')}}">
+<button  style="background-color:#212529;" class="btn btn-dark"  type="submit">
+Cadastrar
+</button>
+	</a>
+  </div>
+</div>
+</div>
+@endif
 
 
 @endsection
@@ -37,3 +46,12 @@
 
  
 @endsection
+
+
+<script>
+document.addEventListener('submit', function() {
+
+    window.location.href = "/register";
+
+});
+</script>

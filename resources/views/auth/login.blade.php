@@ -18,6 +18,11 @@
 						<span class="label-input100">Login</span>
 						<input id="email"  class="input100 @error('email') is-invalid @enderror" type="email" name="email"placeholder="Entre com seu email" value="{{ old('email') }}" autocomplete="email" autofocus>
 						<span class="focus-input100"></span>
+						@error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Senha obrigatoria">
@@ -51,14 +56,22 @@
 							Entrar
 						</button>
 					</div>
+
 				</form>
+				<div class="container-login100-form-btn" action="{{route('register')}}">
+						<a href="{{route('register')}}">
+						<button type="submit" class="text-white">
+							Cadastrar usuario
+						</button>
+						</a>
+					</div>
 			</div>
 		</div>
 
 	
 		<div class="footer">
     <div class="position-relative">
-	<div style="background-color:black;font-size:0.8rem;">Copyright 2021 © Secretaria de Estado de Educação do Amazonas - Todos os direitos reservados.</div>
+	<div style="background-color:#001956;font-size:0.8rem;">Copyright 2021 © Secretaria de Estado de Educação do Amazonas - Todos os direitos reservados.</div>
       <img src="img\rodape.png" id="imagem">
 	 
     </div>

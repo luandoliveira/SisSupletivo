@@ -178,7 +178,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color:#212529;
+  background-color:#0c606d;
   /* background-image:url("img4.jpg"); */
 
 }
@@ -195,7 +195,7 @@ iframe {
    background-color: #ffffff;
    color: white;
    text-align: center;
-   /* height:20%; */
+   height:12%;
    /* padding:10px; */
  }
 
@@ -207,7 +207,7 @@ iframe {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: #000 20px 4px 10px; 
+  box-shadow: #000 5px 4px 10px; 
   /*sombra borda *   tam tam transparencia*/
   
 }
@@ -238,7 +238,7 @@ background-color: #cbebfa;
 .login100-form-title-1 {
   font-family: Poppins-Bold;
   font-size: 30px;
-  color: #fff;
+  color: #CBEBFA;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
