@@ -104,7 +104,7 @@
 
 }
 
-}
+
  </style>
 @endsection
 @section('css')

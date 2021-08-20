@@ -10,7 +10,7 @@
 
 
 <br>
-@if($show)
+
 <div class="container-fluid" id="teste">
 <h3 ckass="text-center">Bem Vindo ao Sistema de Supletivo Web</h3>
 <!-- <div class="container-login100-form-btn" action="{{route('logout')}}">
@@ -21,9 +21,10 @@
 						</a>
 					</div> -->
 
-</br>                
+</br>   
+@if($show)             
 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-  <div class="card-header">Cadastrar um Usuário</div>
+  <div class="card-header" >Cadastrar um Usuário</div>
   <div class="card-body">
     <h5 class="card-title"></h5>
     <a href="{{route('logout')}}">

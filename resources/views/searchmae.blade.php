@@ -9,7 +9,7 @@
     <img src="img/loading.gif" alt="Loading..." />
 </div>
 </div> 
-<h3 class="text-center display-4">Consultar<i class="fa fa-search" aria-hidden="true"></i> Mãe</h3>
+<h3 class="text-center display-4">Consultar <i class="fa fa-search" aria-hidden="true"></i> Mãe</h3>
 <hr></hr>
 
       <form  class="form-inline" action="{{route('search_mae')}}"  method="post">
@@ -100,7 +100,7 @@
 
 }
 
-}
+
  </style>
 @endsection
 @section('css')
