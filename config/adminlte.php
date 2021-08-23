@@ -243,24 +243,9 @@ return [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ], */
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+    
 
          ['header' => ' '],
-/*         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ], */
-
 
         [
             'text'    => 'Consultar ',
@@ -276,6 +261,7 @@ return [
                     'icon'    => 'far fa-address-card',
                     'url'  => '/searchmae',
                 ],
+             
             /*     [
                     'text'    => 'level_one',
                     'url'     => '#',
@@ -303,7 +289,23 @@ return [
               
             ],
         ],
+        [
+            'text'    => 'Cadastrar ',
+            'icon'    => 'fas fa-fw fa-user',
+            'can'     => 'ver-form',
+            'submenu' => [
+                [
+                    'text' => 'Novo Usuário',
+                    'icon'    => 'fa fa-user-plus',
+                    'url'  => '/register',
+                    
+                ],
+  
+            ],
+        ],
 
+
+    
    
         //   ['header'=> ''],
         // [
