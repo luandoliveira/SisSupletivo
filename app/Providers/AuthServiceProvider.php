@@ -27,7 +27,7 @@ class AuthServiceProvider extends ServiceProvider
         
         Gate::define('ver-form', function($user){ // identifica o adm no sistema
 
-            if($user->permission==1){
+            if($user->permission ===1){
               return true;
 
             }else{

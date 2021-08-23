@@ -23,6 +23,7 @@ class HomeController extends Controller
         $this->objUser=new User();
         $this->objSupletivo= new ModelSupletivo();
         $this->middleware('auth');
+      
     }
 
     /**
@@ -110,10 +111,10 @@ public function searchamae(Request $request)
         return view('search_aluno_resul', compact('search_name'));
     } */
 
-    public function logout(){
-        Auth::logout();
-        return redirect()->route('register');
+    // public function logout(){
+    //     Auth::logout();
+    //     return redirect()->route('register');
   
-      }
+    //   }
 
 }

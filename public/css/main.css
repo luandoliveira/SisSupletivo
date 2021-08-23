@@ -168,7 +168,7 @@ iframe {
 
 .container-login100 {
   width: 100%;  
-  min-height: 90vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -185,18 +185,21 @@ iframe {
 #imagem{
 
   width: 50%;
- 
+  min-height: 5vh;
+  align-items: center;
  }
  .footer {
    position:absolute;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #ffffff;
+   background-color: white;
    color: white;
    text-align: center;
-   height:12%;
+   min-height:15px;
+   align-items: center;
    /* padding:10px; */
+
  }
 
 

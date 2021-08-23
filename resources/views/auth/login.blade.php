@@ -58,13 +58,6 @@
 					</div>
 
 				</form>
-				<div class="container-login100-form-btn" action="{{route('register')}}">
-						<a href="{{route('register')}}">
-						<button type="submit" class="text-white">
-							Cadastrar usuario
-						</button>
-						</a>
-					</div>
 			</div>
 		</div>
 
@@ -72,7 +65,7 @@
 		<div class="footer">
     <div class="position-relative">
 	<div style="background-color:#001956;font-size:0.8rem;">Copyright 2021 © Secretaria de Estado de Educação do Amazonas - Todos os direitos reservados.</div>
-      <img src="img\rodape.png" id="imagem">
+      <img src="img\rodape2.png" id="imagem">
 	 
     </div>
   </div>

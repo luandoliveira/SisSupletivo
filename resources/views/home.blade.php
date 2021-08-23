@@ -23,11 +23,11 @@
 
 </br>   
 @if($show)             
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+<div class=" card text-white bg-dark mb-3" style="max-width: 18rem;">
   <div class="card-header" >Cadastrar um Usuário</div>
   <div class="card-body">
     <h5 class="card-title"></h5>
-    <a href="{{route('logout')}}">
+    <a href="{{route('register')}}">
 <button  style="background-color:#212529;" class="btn btn-dark"  type="submit">
 Cadastrar
 </button>
